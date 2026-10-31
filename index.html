@@ -19,9 +19,35 @@
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="default" />
     <meta name="apple-mobile-web-app-title" content="Édito B1" />
+    <!-- Persian font, SELF-HOSTED (no CDN): Vazirmatn woff2 files
+         live in client/public/fonts/ and ship verbatim at
+         ./fonts/. Every element marked lang="fa" (tap-a-word
+         glosses, flashcard meanings, Persian grammar explanations)
+         renders in Vazirmatn; Latin/French text keeps its own
+         fonts. Line-height is generous: Persian script needs it. -->
+    <style>
+      @font-face {
+        font-family: "Vazirmatn";
+        src: url("./fonts/vazirmatn-regular.woff2") format("woff2");
+        font-weight: 400;
+        font-style: normal;
+        font-display: swap;
+      }
+      @font-face {
+        font-family: "Vazirmatn";
+        src: url("./fonts/vazirmatn-bold.woff2") format("woff2");
+        font-weight: 700;
+        font-style: normal;
+        font-display: swap;
+      }
+      [lang="fa"] {
+        font-family: "Vazirmatn", Tahoma, Arial, sans-serif;
+        line-height: 2;
+      }
+    </style>
     <title>French — Édito B1</title>
     
-  <link rel="stylesheet" crossorigin href="./assets/index-vmxrfgkm.css"><script type="module" crossorigin src="./assets/index-xj4dykjw.js"></script></head>
+  <link rel="stylesheet" crossorigin href="./assets/index-ajb6tt75.css"><script type="module" crossorigin src="./assets/index-17tkt42b.js"></script></head>
   <body>
     <div
       data-generated-space-root=""
