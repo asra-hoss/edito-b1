@@ -4,12 +4,24 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no" />
     <meta name="color-scheme" content="light dark" />
-    <!-- Empty inline icon: stops the browser fetching /favicon.ico, which
-         lives outside the space's routes and fails auth. -->
-    <link rel="icon" href="data:," />
+    <!-- Installable web app (PWA): Safari's "Add to Home Screen" gives
+         the app its own icon and a full-screen, standalone launch.
+         The file-referencing <link>s (manifest, touch icon, favicon)
+         are injected into the built HTML by build-static.mjs —
+         Bun resolves relative link hrefs as bundle assets, so they
+         cannot live in this source file. The files themselves live
+         in client/public/ and ship verbatim at the site root. -->
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <link rel="apple-touch-icon" href="./apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="./icon-192.png" />
+    <meta name="theme-color" content="#0f766e" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="Édito B1" />
     <title>French — Édito B1</title>
     
-  <link rel="stylesheet" crossorigin href="./assets/index-jk73b6az.css"><script type="module" crossorigin src="./assets/index-fz4yh36x.js"></script></head>
+  <link rel="stylesheet" crossorigin href="./assets/index-gyh6cf7c.css"><script type="module" crossorigin src="./assets/index-tt2839zm.js"></script></head>
   <body>
     <div
       data-generated-space-root=""
